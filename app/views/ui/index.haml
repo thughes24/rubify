@@ -1,0 +1,8 @@
+%h2.ui User Interface Files
+
+%section.ui
+  %ul.ui
+    - Dir.glob('app/views/ui/*.haml').sort.each do |file|
+      - wireframe = File.basename(file,'.haml')
+      -  unless wireframe == 'index' || wireframe.match(/^_/)
+        %li= link_to wireframe.titleize, action: wireframe unless wireframe == 'index'

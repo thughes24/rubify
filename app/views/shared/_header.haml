@@ -1,0 +1,20 @@
+.header-container
+	.header
+		.logo
+			LOGO
+		%input{type: 'checkbox', id: 'checkbox-hack'}
+		%label{for: 'checkbox-hack'}
+			.hamburger
+				.bar.top
+				.bar.middle
+				.bar.bottom
+		%ul.nav
+			%li
+				=link_to "Home", "#", class: 'nav-link'
+			%li
+				=link_to "About", "#", class: 'nav-link'
+			%li
+				=link_to "Shop", "#", class: 'nav-link'
+			%li
+				=link_to "Contact", "#", class: 'nav-link'
+
